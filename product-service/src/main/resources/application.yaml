@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: jdbc:postgresql://localhost:54322/productDb
+    username: admin
+    password: admin123
+
+discount:
+  grpc:
+    host: localhost
+    port: 9090
+
+server:
+  port: 8081

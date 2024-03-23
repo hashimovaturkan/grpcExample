@@ -1,0 +1,15 @@
+syntax="proto3";
+option java_multiple_files = true;
+package com.example.grpc;
+
+service DiscountService{
+  rpc getDiscount(DiscountRequest) returns (DiscountResponse);
+}
+
+message DiscountResponse{
+  string word = 1;
+}
+
+message DiscountRequest{
+  string word = 1;
+}
